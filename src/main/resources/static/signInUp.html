@@ -11,19 +11,19 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <a href="/" class="home-button form-home-button">Home</a>
-            <form action="/user/register" method="post" id="signUpForm">
-                <h1>Sign Up</h1>
+            <form action="/register" method="post" >
+                <h1>Create Account</h1>
                 <input type="text" name="name" placeholder="Name" />
-                <input type="text" name="username" placeholder="Username" />
+                <input type="email" name="email" placeholder="Email" />
                 <input type="password" name="password" placeholder="Password" />
                 <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <a href="/" class="home-button form-home-button">Home</a>
-            <form action="/users/login" method="post">
+            <form method="post" action="/login" >
                 <h1>Sign in</h1>
-                <input type="text" name="username" placeholder="Username" />
+                <input type="email" name="email" placeholder="Email" />
                 <input type="password" name="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button type="submit">Sign In</button>

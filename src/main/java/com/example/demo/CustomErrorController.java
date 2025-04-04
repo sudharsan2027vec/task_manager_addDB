@@ -11,6 +11,12 @@ public class CustomErrorController implements ErrorController {
 
     @GetMapping("/error")
     public String handleError(HttpServletRequest request) {
-        return "error"; // This will return "error.html"
+        // Optional: You can inspect the status code here if needed
+        return "error"; // maps to error.html in templates
+    }
+
+    // This is not required in Spring Boot 2.3+, but still safe to add
+    public String getErrorPath() {
+        return "/error";
     }
 }
